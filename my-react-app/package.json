@@ -1,0 +1,21 @@
+{
+  "name": "my-react-app",
+  "version": "0.1.1",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "color-diff": "^1.1.0",
+    "react-scripts": "1.0.10"
+  },
+  "homepage": "./html/",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy:local": "yarn build && node ./utils/deploy_local.js"
+  }
+}

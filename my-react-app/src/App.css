@@ -1,0 +1,64 @@
+body {
+  background-color: #eee;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+}
+
+.App-body {
+  /* flex 1 will maximize body height (vertical) */
+  flex: 1;
+  /* display: flex; applies to teh content (horizontal) */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.App-body > div {
+  /* outline: 1px solid red; */
+  margin: 0px 10px;
+  /* header: 44px, footer: 20px, padding 2*10px */
+  height: calc(100vh - 88px);
+}
+
+.App-header {
+  background-color: #222;
+  color: white;
+}
+
+.App-footer {
+  background-color: #222;
+  color: white;
+  font-size: 12px;
+  padding: 5px 8px 1px;
+  height: 18px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.App h2 {
+  margin: 0;
+  display: inline-block;
+  margin-top: 10px;
+  vertical-align: top;
+}
+
+h4 {
+  margin: 5px;
+}
+
+.error {
+  color: orange;
+}
+
